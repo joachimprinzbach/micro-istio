@@ -18,7 +18,7 @@ public class GreetingRestController {
     @GetMapping(path = "greeting")
     public GreetingDto greet() {
         LOGGER.info("Calling greeting");
-        String response = restTemplate.getForObject("http://concat-service:8091/concat", String.class);
+        String response = restTemplate.getForObject("http://concat-service-backend.concat-service.svc:8080/concat", String.class);
         LOGGER.info("Received value from concat service: " + response);
         return new GreetingDto("Hello " + response);
     }
