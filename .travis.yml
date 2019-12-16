@@ -29,7 +29,7 @@ script:
   - docker push $IMAGE_NAME:latest
   - if [ $BRANCH = "master" ]; then docker push $IMAGE_NAME:master; fi
   - docker push $IMAGE_NAME:$TAG
-  - docker build concat-service -t $IMAGE_NAME2:latest
+  - docker build greeting-service -t $IMAGE_NAME2:latest
   - if [ $BRANCH = "master" ]; then docker tag $IMAGE_NAME2:latest $IMAGE_NAME2:master; fi
   - docker tag $IMAGE_NAME2:latest $IMAGE_NAME2:$TAG
   - docker push $IMAGE_NAME2:latest
