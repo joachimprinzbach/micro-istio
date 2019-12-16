@@ -9,9 +9,9 @@ matrix:
 env:
   global:
     # DOCKER_USER
-    - secure: "M1YVktZ7fD+Cde8ciYBUSEIFZTRmZwRXvqWujtx1UcBiWJKYbbeUj6Esi9HdPCZUaK0pG5jxnW1XhLXrN4sJ+JgaZJ+ReCiK+MvOK7JvjPuXnNUYNgXCGtaHnfGOT5zzKSacW+EKOCYPJrszCwPtOq69xm8NEQRfzfZk//DItZTmXR+FswYzeN7DtH1Dk/5zvkYs1I+sAZFZtGZDEqTF2toAe9GRyHAg0KE7RiF6oVcNwcIXNfFANuY8iXq/X3oYQshzGOAEGTovFTNmgX0ElPbp5W36YI7zxrsTyVo4nzbYEIPuxQuOCTOn0M/XPFEHn0lxmQSutdyZZqGgGwbCa+luIpkFZ+jOWm/uz/Ib5gjKvlSiy/IH4G3DORTqu9O0IM37fJs08XJHRFu8bxPWEQuLVgQ4wrTLRCH72MEh63k6b4U4KJ2Y3QdNjnEFL403XTTlQqNZm8xFMX/xaQdUvRItC0haaXjG3ak4c1ilVGWVE4VNk1Mi63f8pxQyzaBfmeaYjQIoOEaUxujylzFQwmpidEijL4ebpomc8pfQMqFZ+my0ZNtGwNifkvGeX/qzyuSMnaS8Oe2MNiNodnrBD0TGvG/mSd+/shFTAB7Qu42w05apsdyd+Xn9C6CnU8wVoGDbWwb5Yjm5q1Ag/Z9f0Lu5EjDYEqc12lXKaqt3wb4="
+    - secure: "BDUJ9S0PYG9Osn/3WU/ZX2VmfhlX47w26Nb7R0ZLPqHi9aSOfdp0uUZg+QES1jptYvdp/vt1MVtpRYnyMwJMbvUaQKEgdihKuD3KROoYu5lEu/pSjqB1bcDXlXGGzAaNQi1uTFIhU0NgMshuSjjMNyf2U6xwqus/A8rUkUOcLg8SPfGGUithoEa80SGaH9KrH9ksHuqgFRrLjXAdGUoHTN5Szm71GJ8hot630AYoqi58ZM1zdVPNXJUKKNhzTD5/7HmD/zZWgvjPlObMI7OEo9/xk741nn36Cr7bQOqqXGF9rCOPPpVp9GrEylAYzkHU5cCP+f+cnMKR0bs45/Vn7QwfINK1iXRb7UWljXadu/amxg5fJMvEzv+NBSVJ3Qy8UmDo6sMFLMkSngAeZZoupqarLhdWn0xOPW0A5DHt4FzhWTuGgYZU+jC3l1nAjeKGj7NjW8sUpb5cSfmqBxLd79HtfbY4S/IbsYCCkJNfchhv516GUFtmwaeEYZOVpsimkoydW7FzhVzgsTLYhhIuXuY1Hq73xETkPe2N/DuS2OxhJGbRygS6IpLc8tWj5qS5ZyLjHeSohu7jB3+CWmRCLffv57QEF52IpunEGE4E2vTOUI2qFZ47121lhhkLDQ3UBGaFu6jwSPJI87esFNjw5ycLUbUdgv6qlcxDr52owy4="
     # DOCKER_PASSWORD
-    - secure: "yiMrYbl4OIn47LWoOvbQeSRAgLycG2NHdFR7XUvCdRSD9JbOs7LtOfp8lbNBj0khDqr1jcsE0Ne4duJ/SgI70mwnRrNJjWHrJu1RtrSKH1SZbumKqKI+YAkc4xFJy3n+0l8cCZIZcWLVdde+nJ42dvE6VfmYnxl7oohXJ+NMxGNe8hARTs7FdGRq6H7/Pu1bP4dhhz2DUeXqhNfRs4KWd/f2na+niu8FIniadDX3O0HYQbCMXqz0DfqqqsLu+oLiATiQt+pdaS0a/7tmzL5viy4TNbok485BU4S3mGYv8jYXai1LatbO1QIbhSvedlUks8nTtiw6WrWsm9EeGvFu4wsFdLwNCe8szd/b84q0yPdU8vYy93d1TKi0PjOJ8/W/qQzcmwns2HypdXWJLhDEG1Xey5xWy+7RP/p0FWZNBxq1HRb0DMDGtqVT3cVuLrpr7YmqwK5oRd0ubzHkxEvsSQ3ugfyb1bieYS7CNiMrZl6BpL0/TzCHdQcC4h30BOvH8I/V+nt8+d3+ViIDMPWg4nNMESwQNT5tu0CKlv8UD0OMSeRx4wPKz0TOXrynuYg2f/JoNvJ/Y100MxzuNOLNr890flX2491zx/1GK7odxJSQtw99FwTTsERC+Jw+SVWncfRRJhj32ioaLax6IoMQKqdgDN5HPut+43qKDwYp20M="
+    - secure: "N3W7Lz1TgbV4gtjrtfxgubsQq4lp52ViI3SdGrHUfkKH5ZXZu5+zE3dyuyOA5dBgSe0/NgB5LUTmr5FfK20yBvSbuFTtMhTOzwdcWbokBCLetm3a4fzCELqqGk3Rxc5ff3V/udvAquy/SoJ3xc1QBt1WCPQ2GRhmHXRMvQiks4xLAVXR39Lq5WwPVzIYxrQU+SVt3TWAf0VCuF8RXoK5xCTps6rmUZsEEelb0W2+khrK0ymLiOeF7fZM4ukerAWWp79mLxlKTbyThAx+2bgHcc+N2r/iGZJS8VLnmWOjr0j60ndpjT1LInQltIPhnB/KXT2oiFjvNuLCKKhFaElWhn8iRAOIpNKdqZniItSV1oJTnJB5fP8Ta3X14sT8cYx/h9b/n9pBQidYNr+p5mZdra0XhSfJdpcR4opiJ+u/bnfFeWPG26U1oGfkxAXjnN50PH4e3KPQmt0n4QXz9jJGgn+QX34QD+zkSYMa/LLRL4QAEv1iUv8uQGES18nZ/vOzOEpw0aZrJHBUXdGDDV4U8SB7JDBALZHY1oxPZihFGJVJbu/hg06OzKIel2N4mixt0IAdwnI7c7QoOx889ebBJh8FJ/vic0xc8b+pm2UOOwF32gndUH8xLWKbDLcWRGRlTwj8a2lzo6SUBwsQUeHD7QSCOYMFqYCYMZhXWuYndmo="
     - IMAGE_NAME=joachimprinzbach/concat-service
     - IMAGE_NAME2=joachimprinzbach/greeting-service
 
@@ -29,6 +29,12 @@ script:
   - docker push $IMAGE_NAME:latest
   - if [ $BRANCH = "master" ]; then docker push $IMAGE_NAME:master; fi
   - docker push $IMAGE_NAME:$TAG
+  - docker build concat-service -t $IMAGE_NAME2:latest
+  - if [ $BRANCH = "master" ]; then docker tag $IMAGE_NAME2:latest $IMAGE_NAME2:master; fi
+  - docker tag $IMAGE_NAME2:latest $IMAGE_NAME2:$TAG
+  - docker push $IMAGE_NAME2:latest
+  - if [ $BRANCH = "master" ]; then docker push $IMAGE_NAME2:master; fi
+  - docker push $IMAGE_NAME2:$TAG
 
 cache:
   directories:
