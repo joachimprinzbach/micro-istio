@@ -21,7 +21,7 @@ public class GreetingRestController {
 
     @GetMapping(path = "greeting")
     public GreetingDto greet() {
-        LOGGER.info("Calling greeting");
+        LOGGER.info("Calling greeting CANARY");
 
         String response = restTemplate.getForObject(concatServiceUrl, String.class);
         LOGGER.info("Received value from concat service: " + response);

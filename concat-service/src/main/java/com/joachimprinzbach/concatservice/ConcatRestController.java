@@ -12,7 +12,7 @@ public class ConcatRestController {
 
     @GetMapping(path = "concat")
     public ResultDto concat() {
-        LOGGER.info("Calling concat");
-        return new ResultDto("dummy");
+        LOGGER.info("Calling concat CANARY!");
+        return new ResultDto("dummy CANARY");
     }
 }
