@@ -29,12 +29,10 @@ public class GreetingRestController {
     private String concatServiceUrl;
 
     @GetMapping(path = "greeting")
-    public GreetingDto greet(@CookieValue(value = "email", required = false) String email) {
+    public GreetingDto greet(@CookieValue(value = "email", required = false, defaultValue = "unknown") String email) {
         LOGGER.info("Calling greeting");
         HttpEntity<String> request = new HttpEntity<>("");
-        if (email != null) {
-            request.getHeaders().add("Cookie", "email=" + email);
-        }
+        request.getHeaders().add("Cookie", "email=" + email);
         HttpEntity<String> response = restTemplate.exchange(concatServiceUrl, HttpMethod.GET, request, String.class);
         LOGGER.info("Received value from concat service: " + request.getBody());
         return new GreetingDto("Hello " + response);
