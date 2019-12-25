@@ -32,7 +32,9 @@ public class GreetingRestController {
     public GreetingDto greet(@CookieValue(value = "email", required = false) String email) {
         LOGGER.info("Calling greeting");
         HttpEntity<String> request = new HttpEntity<>("");
-        request.getHeaders().add("Cookie", "email="+email);
+        if (email != null) {
+            request.getHeaders().add("Cookie", "email=" + email);
+        }
         HttpEntity<String> response = restTemplate.exchange(concatServiceUrl, HttpMethod.GET, request, String.class);
         LOGGER.info("Received value from concat service: " + request.getBody());
         return new GreetingDto("Hello " + response);
@@ -44,7 +46,7 @@ public class GreetingRestController {
         String email = request.getParameter("email");
         Cookie cookie = createCookie("email", email);
         response.addCookie(cookie);
-        return "Set email="+email;
+        return "Set email=" + email;
     }
 
     private Cookie createCookie(String cookieName, String cookieValue) {
