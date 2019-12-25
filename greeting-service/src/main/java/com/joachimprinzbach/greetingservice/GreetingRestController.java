@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -31,11 +32,12 @@ public class GreetingRestController {
     @GetMapping(path = "greeting")
     public GreetingDto greet(@CookieValue(value = "email", required = false, defaultValue = "unknown") String email) {
         LOGGER.info("Calling greeting");
-        HttpEntity<String> request = new HttpEntity<>("");
-        request.getHeaders().add("Cookie", "email=" + email);
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.add("Cookie", "email=" + email);
+        HttpEntity<String> request = new HttpEntity<>(httpHeaders);
         HttpEntity<String> response = restTemplate.exchange(concatServiceUrl, HttpMethod.GET, request, String.class);
         LOGGER.info("Received value from concat service: " + request.getBody());
-        return new GreetingDto("Hello " + response);
+        return new GreetingDto("Hello " + response.getBody());
     }
 
     @RequestMapping(path = "login")
@@ -52,7 +54,6 @@ public class GreetingRestController {
         cookie.setPath("/");
         cookie.setMaxAge(MAX_AGE_SECONDS);
         cookie.setHttpOnly(true);
-        cookie.setSecure(true);
         return cookie;
     }
 }
