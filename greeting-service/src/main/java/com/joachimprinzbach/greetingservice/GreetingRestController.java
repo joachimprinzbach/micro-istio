@@ -29,7 +29,7 @@ public class GreetingRestController {
     private String concatServiceUrl;
 
     @GetMapping(path = "greeting")
-    public GreetingDto greet(@CookieValue("email") String email) {
+    public GreetingDto greet(@CookieValue(value = "email", required = false) String email) {
         LOGGER.info("Calling greeting");
         HttpEntity<String> request = new HttpEntity<>("");
         request.getHeaders().add("Cookie", "email="+email);
