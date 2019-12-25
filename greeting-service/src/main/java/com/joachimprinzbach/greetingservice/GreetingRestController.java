@@ -34,6 +34,7 @@ public class GreetingRestController {
         LOGGER.info("Calling greeting");
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.add("Cookie", "email=" + email);
+        LOGGER.info("Forward cookie email: " + email);
         HttpEntity<String> request = new HttpEntity<>(httpHeaders);
         HttpEntity<String> response = restTemplate.exchange(concatServiceUrl, HttpMethod.GET, request, String.class);
         LOGGER.info("Received value from concat service: " + request.getBody());
